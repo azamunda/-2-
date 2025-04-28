@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Номера - Apex Hotel</title>
+    <link rel="stylesheet" href="rooms.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка с навигацией -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Apex Hotel</h1>
+                <p>Гостиничный комплекс</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="rooms.html">Номера</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="location.html">Расположение</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li class="phone-number">
+                        <a href="tel:+74951234567">
+                            <i class="fas fa-phone-alt"></i> +7 (986) 934-61-90
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Заголовок страницы -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Наши номера</h1>
+            <p>Выберите идеальный вариант для вашего пребывания</p>
+        </div>
+    </section>
+
+    <!-- Фильтры номеров -->
+    <section class="room-filters">
+        <div class="container">
+            <form>
+                <div class="filter-group">
+                    <label for="room-type">Тип номера</label>
+                    <select id="room-type" name="room-type">
+                        <option value="all">Все номера</option>
+                        <option value="standard">Стандарт</option>
+                        <option value="luxury">Люкс</option>
+                        <option value="family">Семейный</option>
+                        <option value="business">Бизнес</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price-range">Ценовой диапазон</label>
+                    <select id="price-range" name="price-range">
+                        <option value="all">Любой</option>
+                        <option value="budget">До 7 000 ₽</option>
+                        <option value="mid">7 000 - 12 000 ₽</option>
+                        <option value="high">От 12 000 ₽</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="capacity">Вместимость</label>
+                    <select id="capacity" name="capacity">
+                        <option value="all">Любая</option>
+                        <option value="1">1 гость</option>
+                        <option value="2">2 гостя</option>
+                        <option value="3">3 гостя</option>
+                        <option value="4+">4+ гостей</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Применить фильтры</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Список номеров -->
+    <section class="rooms-list">
+        <div class="container">
+            <!-- Стандартный номер -->
+            <div class="room-detail" id="standard">
+                <div class="room-gallery">
+                    <div class="main-image">
+                        <img src="./img/стандарт 1 к.webp" alt="Стандартный номер">
+                    </div>
+                    <div class="thumbnails">
+                        <img src="img/стандарт 2 к.jpg" alt="Стандартный номер фото 2">
+                        <img src="./img/стандарт 3 к.webp" alt="Стандартный номер фото 3">
+                        <img src="./img/стандарт 4 к.jpg" alt="Стандартный номер фото 4">
+                    </div>
+                </div>
+                <div class="room-info">
+                    <h2>Стандартный номер</h2>
+                    <div class="price">от 5 000 ₽ / ночь</div>
+                    <div class="description">
+                        <p>Уютный и комфортабельный номер площадью 25 м² с современным дизайном. Идеально подходит для деловых поездок и отдыха.</p>
+                        <ul class="amenities">
+                            <li><i class="fas fa-wifi"></i> Бесплатный Wi-Fi</li>
+                            <li><i class="fas fa-tv"></i> Телевизор с плоским экраном</li>
+                            <li><i class="fas fa-snowflake"></i> Кондиционер</li>
+                            <li><i class="fas fa-coffee"></i> Чайник и кофеварка</li>
+                            <li><i class="fas fa-shower"></i> Душ</li>
+                            <li><i class="fas fa-utensils"></i> Мини-бар</li>
+                        </ul>
+                    </div>
+                    <div class="room-meta">
+                        <div class="size"><i class="fas fa-ruler-combined"></i> 25 м²</div>
+                        <div class="capacity"><i class="fas fa-user-friends"></i> До 2 гостей</div>
+                        <div class="bed"><i class="fas fa-bed"></i> 1 двуспальная кровать</div>
+                    </div>
+                    <a href="#" class="btn btn-large">Забронировать</a>
+                </div>
+            </div>
+
+            <!-- Люкс номер -->
+            <div class="room-detail" id="luxury">
+                <div class="room-gallery">
+                    <div class="main-image">
+                        <img src="./img/люкс 1 к.jpeg" alt="Люкс номер">
+                    </div>
+                    <div class="thumbnails">
+                        <img src="./img/люкс 2 к.webp" alt="Люкс номер фото 2">
+                        <img src="./img/люкс 3 к.webp" alt="Люкс номер фото 3">
+                        <img src="./img/люкс 4 к.jpg" alt="Люкс номер фото 4">
+                    </div>
+                </div>
+                <div class="room-info">
+                    <h2>Номер Люкс</h2>
+                    <div class="price">от 12 000 ₽ / ночь</div>
+                    <div class="description">
+                        <p>Просторный номер площадью 45 м² с панорамными окнами, гостиной зоной и улучшенными удобствами. Идеальный выбор для особых случаев.</p>
+                        <ul class="amenities">
+                            <li><i class="fas fa-wifi"></i> Бесплатный Wi-Fi</li>
+                            <li><i class="fas fa-tv"></i> Телевизор с плоским экраном</li>
+                            <li><i class="fas fa-snowflake"></i> Кондиционер</li>
+                            <li><i class="fas fa-coffee"></i> Чайник и кофеварка</li>
+                            <li><i class="fas fa-bath"></i> Ванна и душ</li>
+                            <li><i class="fas fa-utensils"></i> Мини-бар</li>
+                            <li><i class="fas fa-couch"></i> Гостиная зона</li>
+                            <li><i class="fas fa-umbrella-beach"></i> Вид на город</li>
+                        </ul>
+                    </div>
+                    <div class="room-meta">
+                        <div class="size"><i class="fas fa-ruler-combined"></i> 45 м²</div>
+                        <div class="capacity"><i class="fas fa-user-friends"></i> До 2 гостей</div>
+                        <div class="bed"><i class="fas fa-bed"></i> 1 king-size кровать</div>
+                    </div>
+                    <a href="#" class="btn btn-large">Забронировать</a>
+                </div>
+            </div>
+
+            <!-- Семейный номер -->
+            <div class="room-detail" id="family">
+                <div class="room-gallery">
+                    <div class="main-image">
+                        <img src="img/семейный 1 к.webp" alt="Семейный номер">
+                    </div>
+                    <div class="thumbnails">
+                        <img src="./img/семейный 2 к.webp" alt="Семейный номер фото 2">
+                        <img src="./img/семейный 3 к.jpg" alt="Семейный номер фото 3">
+                        <img src="./img/семейный 4 к.jpg" alt="Семейный номер фото 4">
+                    </div>
+                </div>
+                <div class="room-info">
+                    <h2>Семейный номер</h2>
+                    <div class="price">от 8 000 ₽ / ночь</div>
+                    <div class="description">
+                        <p>Просторный номер площадью 35 м² с двумя раздельными спальными зонами. Идеальный вариант для семейного отдыха.</p>
+                        <ul class="amenities">
+                            <li><i class="fas fa-wifi"></i> Бесплатный Wi-Fi</li>
+                            <li><i class="fas fa-tv"></i> Телевизор с плоским экраном</li>
+                            <li><i class="fas fa-snowflake"></i> Кондиционер</li>
+                            <li><i class="fas fa-coffee"></i> Чайник и кофеварка</li>
+                            <li><i class="fas fa-shower"></i> Душ</li>
+                            <li><i class="fas fa-utensils"></i> Мини-бар</li>
+                            <li><i class="fas fa-child"></i> Детские принадлежности по запросу</li>
+                        </ul>
+                    </div>
+                    <div class="room-meta">
+                        <div class="size"><i class="fas fa-ruler-combined"></i> 35 м²</div>
+                        <div class="capacity"><i class="fas fa-user-friends"></i> До 4 гостей</div>
+                        <div class="bed"><i class="fas fa-bed"></i> 1 двуспальная + 2 односпальные кровати</div>
+                    </div>
+                    <a href="#" class="btn btn-large">Забронировать</a>
+                </div>
+            </div>
+
+            <!-- Бизнес номер -->
+            <div class="room-detail" id="business">
+                <div class="room-gallery">
+                    <div class="main-image">
+                        <img src="img/бизнес 1 к.webp" alt="Бизнес номер">
+                    </div>
+                    <div class="thumbnails">
+                        <img src="./img/бизнес 2 к.webp" alt="Бизнес номер фото 2">
+                        <img src="./img/бизнес 3 к.jpg" alt="Бизнес номер фото 3">
+                        <img src="./img/бизнес 4 к.avif" alt="Бизнес номер фото 4">
+                    </div>
+                </div>
+                <div class="room-info">
+                    <h2>Бизнес номер</h2>
+                    <div class="price">от 10 000 ₽ / ночь</div>
+                    <div class="description">
+                        <p>Специально оборудованный номер площадью 30 м² для деловых путешественников. Включает рабочую зону с удобным столом и ортопедическим креслом.</p>
+                        <ul class="amenities">
+                            <li><i class="fas fa-wifi"></i> Высокоскоростной Wi-Fi</li>
+                            <li><i class="fas fa-tv"></i> Телевизор с плоским экраном</li>
+                            <li><i class="fas fa-snowflake"></i> Кондиционер</li>
+                            <li><i class="fas fa-coffee"></i> Чайник и кофеварка</li>
+                            <li><i class="fas fa-shower"></i> Душ</li>
+                            <li><i class="fas fa-utensils"></i> Мини-бар</li>
+                            <li><i class="fas fa-desktop"></i> Рабочая зона</li>
+                            <li><i class="fas fa-phone-alt"></i> Прямой телефон</li>
+                        </ul>
+                    </div>
+                    <div class="room-meta">
+                        <div class="size"><i class="fas fa-ruler-combined"></i> 30 м²</div>
+                        <div class="capacity"><i class="fas fa-user-friends"></i> До 2 гостей</div>
+                        <div class="bed"><i class="fas fa-bed"></i> 1 двуспальная кровать</div>
+                    </div>
+                    <a href="#" class="btn btn-large">Забронировать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Дополнительные услуги -->
+    <section class="extra-services">
+        <div class="container">
+            <h2>Дополнительные услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-bed"></i>
+                    <h3>Дополнительная кровать</h3>
+                    <p>1 000 ₽ / ночь</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-baby"></i>
+                    <h3>Детская кроватка</h3>
+                    <p>Бесплатно</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-dog"></i>
+                    <h3>Размещение с животными</h3>
+                    <p>2 000 ₽ / ночь</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Парковка</h3>
+                    <p>1 000 ₽ / сутки</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал  -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Apex Hotel</h3>
+                    <p>Роскошный гостиничный комплекс с безупречным сервисом в самом сердце города.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Центральная, 1</p>
+                    <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@apexhotel.ru</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="rooms.html">Номера</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Подписаться на рассылку</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <p>Узнавайте первыми об акциях и специальных предложениях.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Apex Hotel. Все права защищены.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="terms.html">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+</body>
+</html>

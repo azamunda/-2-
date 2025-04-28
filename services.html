@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги - Apex Hotel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+    <!-- Улучшенная шапка -->
+    <!-- Шапка с навигацией -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Apex Hotel</h1>
+                <p>Гостиничный комплекс</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="rooms.html">Номера</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="location.html">Расположение</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li class="phone-number">
+                        <a href="tel:+74951234567">
+                            <i class="fas fa-phone-alt"></i> +7 (986) 934-61-90
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Заголовок страницы -->
+    <section class="page-header">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <p>Откройте для себя весь спектр услуг, которые сделают ваше пребывание незабываемым</p>
+        </div>
+    </section>
+
+    <!-- Основные услуги -->
+    <section class="main-services">
+        <div class="container">
+            <div class="service-tabs">
+                <button class="tab-btn active" data-tab="dining">Ресторан</button>
+                <button class="tab-btn" data-tab="spa">SPA & Wellness</button>
+                <button class="tab-btn" data-tab="business">Бизнес-услуги</button>
+                <button class="tab-btn" data-tab="events">Мероприятия</button>
+                <button class="tab-btn" data-tab="other">Дополнительно</button>
+            </div>
+
+            <div class="service-content active" id="dining">
+                <div class="service-details">
+                    <h3>Ресторан "Apex Gourmet"</h3>
+                    <p>Наш ресторан предлагает изысканные блюда международной кухни, приготовленные из свежих местных
+                        продуктов под руководством нашего шеф-повара.</p>
+                    <div class="service-features">
+                        <div class="feature">
+                            <i class="fas fa-utensils"></i>
+                            <h4>Завтрак</h4>
+                            <p>07:00 - 11:00</p>
+                            <p>Шведский стол с широким выбором блюд</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-coffee"></i>
+                            <h4>Обед</h4>
+                            <p>12:00 - 16:00</p>
+                            <p>Бизнес-ланч или à la carte меню</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-wine-glass-alt"></i>
+                            <h4>Ужин</h4>
+                            <p>18:00 - 23:00</p>
+                            <p>Изысканные блюда и винная карта</p>
+                        </div>
+                    </div>
+                    <div class="service-gallery">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Ресторан">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Блюда">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Бар">
+                    </div>
+                    <a href="#reservation" class="btn">Забронировать столик</a>
+                </div>
+            </div>
+
+            <div class="service-content" id="spa">
+                <div class="service-details">
+                    <h3>SPA & Wellness центр</h3>
+                    <p>Оазис спокойствия и релаксации, где вы можете полностью восстановить силы и обрести гармонию.</p>
+                    <div class="service-features">
+                        <div class="feature">
+                            <i class="fas fa-spa"></i>
+                            <h4>SPA-процедуры</h4>
+                            <ul>
+                                <li>Массажи (классический, тайский, ароматерапия)</li>
+                                <li>Обертывания</li>
+                                <li>Уход за лицом</li>
+                                <li>SPA-программы</li>
+                            </ul>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-swimming-pool"></i>
+                            <h4>Бассейн и сауна</h4>
+                            <ul>
+                                <li>Крытый бассейн с подогревом</li>
+                                <li>Финская сауна</li>
+                                <li>Турецкий хамам</li>
+                                <li>Джакузи</li>
+                            </ul>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-dumbbell"></i>
+                            <h4>Фитнес-центр</h4>
+                            <ul>
+                                <li>Современные тренажеры</li>
+                                <li>Персональные тренировки</li>
+                                <li>Йога и пилатес</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price-list">
+                        <h4>Прайс-лист (основные услуги):</h4>
+                        <table>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Продолжительность</th>
+                                <th>Цена</th>
+                            </tr>
+                            <tr>
+                                <td>Классический массаж</td>
+                                <td>60 мин</td>
+                                <td>4 500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>SPA-программа "Релакс"</td>
+                                <td>120 мин</td>
+                                <td>8 900 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Посещение бассейна</td>
+                                <td>1 день</td>
+                                <td>1 500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Фитнес-центр</td>
+                                <td>1 день</td>
+                                <td>800 ₽</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a href="#reservation" class="btn">Записаться на процедуру</a>
+                </div>
+            </div>
+
+            <div class="service-content" id="business">
+                <div class="service-details">
+                    <h3>Бизнес-услуги</h3>
+                    <p>Все необходимое для продуктивной работы и успешных деловых встреч.</p>
+                    <div class="service-features">
+                        <div class="feature">
+                            <i class="fas fa-desktop"></i>
+                            <h4>Бизнес-центр</h4>
+                            <ul>
+                                <li>Компьютеры с интернетом</li>
+                                <li>Принтер, сканер, копир</li>
+                                <li>Факс</li>
+                                <li>Конференц-залы</li>
+                            </ul>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-project-diagram"></i>
+                            <h4>Организация мероприятий</h4>
+                            <ul>
+                                <li>Конференции и семинары</li>
+                                <li>Круглые столы</li>
+                                <li>Презентации</li>
+                                <li>Тренинги</li>
+                            </ul>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-car"></i>
+                            <h4>Трансфер и транспорт</h4>
+                            <ul>
+                                <li>Встреча в аэропорту</li>
+                                <li>Аренда автомобилей</li>
+                                <li>Такси</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price-list">
+                        <h4>Прайс-лист (основные услуги):</h4>
+                        <table>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Продолжительность</th>
+                                <th>Цена</th>
+                            </tr>
+                            <tr>
+                                <td>Конференц-зал (до 10 чел.)</td>
+                                <td>1 час</td>
+                                <td>2 500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Трансфер из аэропорта</td>
+                                <td>-</td>
+                                <td>3 900 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Аренда проектора</td>
+                                <td>1 день</td>
+                                <td>1 800 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Услуги переводчика</td>
+                                <td>1 час</td>
+                                <td>2 000 ₽</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <a href="#reservation" class="btn">Забронировать услугу</a>
+                </div>
+            </div>
+
+            <div class="service-content" id="events">
+                <div class="service-details">
+                    <h3>Организация мероприятий</h3>
+                    <p>Профессиональная организация свадеб, банкетов, корпоративов и других торжественных мероприятий.
+                    </p>
+                    <div class="service-features">
+                        <div class="feature">
+                            <i class="fas fa-glass-cheers"></i>
+                            <h4>Свадьбы</h4>
+                            <p>Организация свадебных церемоний и банкетов</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-birthday-cake"></i>
+                            <h4>Дни рождения</h4>
+                            <p>Празднование юбилеев и дней рождения</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <h4>Корпоративы</h4>
+                            <p>Новогодние вечера и корпоративные мероприятия</p>
+                        </div>
+                    </div>
+                    <div class="service-gallery">
+                        <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Свадьба">
+                        <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Банкет">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Конференция">
+                    </div>
+                    <a href="#reservation" class="btn">Оставить заявку</a>
+                </div>
+            </div>
+
+            <div class="service-content" id="other">
+                <div class="service-details">
+                    <h3>Дополнительные услуги</h3>
+                    <p>Все, что может понадобиться для комфортного пребывания.</p>
+                    <div class="service-features">
+                        <div class="feature">
+                            <i class="fas fa-concierge-bell"></i>
+                            <h4>Консьерж-сервис</h4>
+                            <ul>
+                                <li>Бронирование билетов</li>
+                                <li>Экскурсии</li>
+                                <li>Рекомендации по ресторанам</li>
+                            </ul>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-suitcase-rolling"></i>
+                            <h4>Услуги для гостей</h4>
+                            <ul>
+                                <li>Химчистка и прачечная</li>
+                                <li>Услуги няни</li>
+                                <li>Прокат велосипедов</li>
+                            </ul>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-paw"></i>
+                            <h4>Для питомцев</h4>
+                            <ul>
+                                <li>Размещение с животными</li>
+                                <li>Услуги выгула</li>
+                                <li>Ветеринарная помощь</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price-list">
+                        <h4>Прайс-лист (основные услуги):</h4>
+                        <table>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Продолжительность</th>
+                                <th>Цена</th>
+                            </tr>
+                            <tr>
+                                <td>Химчистка (костюм)</td>
+                                <td>-</td>
+                                <td>1 200 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Услуги няни</td>
+                                <td>1 час</td>
+                                <td>800 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Прокат велосипеда</td>
+                                <td>1 день</td>
+                                <td>1 500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Размещение с животным</td>
+                                <td>1 ночь</td>
+                                <td>1 000 ₽</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма бронирования услуг -->
+    <section class="service-reservation" id="reservation">
+        <div class="container">
+            <h3>Забронировать услугу</h3>
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="service-type">Тип услуги</label>
+                        <select id="service-type" name="service-type">
+                            <option value="">Выберите услугу</option>
+                            <option value="restaurant">Ресторан</option>
+                            <option value="spa">SPA-процедуры</option>
+                            <option value="conference">Конференц-зал</option>
+                            <option value="transfer">Трансфер</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="reservation-date">Дата</label>
+                        <input type="date" id="reservation-date" name="reservation-date">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="reservation-time">Время</label>
+                        <input type="time" id="reservation-time" name="reservation-time">
+                    </div>
+                    <div class="form-group">
+                        <label for="guests-number">Количество человек</label>
+                        <input type="number" id="guests-number" name="guests-number" min="1" value="1">
+                    </div>
+                </div>
+                <div class="form-group full-width">
+                    <label for="special-requests">Особые пожелания</label>
+                    <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="guest-name">Ваше имя</label>
+                        <input type="text" id="guest-name" name="guest-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guest-phone">Телефон</label>
+                        <input type="tel" id="guest-phone" name="guest-phone" required>
+                    </div>
+                </div>
+                <div class="form-group full-width">
+                    <label for="guest-email">Email</label>
+                    <input type="email" id="guest-email" name="guest-email" required>
+                </div>
+                <button type="submit" class="btn">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ
+    <section class="faq">
+        <div class="container">
+            <h3>Часто задаваемые вопросы</h3>
+            <div class="faq-item">
+                <button class="faq-question">Какие меры безопасности приняты в связи с COVID-19?<i
+                        class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Мы строго соблюдаем все рекомендации органов здравоохранения. В номерах и общественных зонах
+                        проводится усиленная уборка с дезинфицирующими средствами, установлены санитайзеры, персонал
+                        использует средства индивидуальной защиты. В ресторане соблюдается социальная дистанция.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Можно ли отменить бронирование услуги?<i
+                        class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Да, вы можете отменить бронирование большинства услуг бесплатно за 24 часа до назначенного
+                        времени. Для некоторых услуг (например, организация мероприятий) могут действовать особые
+                        условия отмены, о которых вас уведомят при бронировании.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Есть ли скидки для постоянных гостей?<i
+                        class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Да, у нас действует программа лояльности для постоянных гостей. При каждом посещении вы
+                        накапливаете баллы, которые можно использовать для получения скидок на номера и услуги.
+                        Подробности можно узнать у нашего персонала.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Можно ли разместиться с домашним животным?<i
+                        class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Да, мы рады гостям с домашними животными. Пожалуйста, сообщите нам заранее о вашем питомце при
+                        бронировании. Взимается дополнительная плата за уборку. В отеле есть специальные зоны для выгула
+                        животных.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Apex Hotel</h3>
+                    <p>Роскошный гостиничный комплекс с безупречным сервисом в самом сердце города.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Центральная, 1</p>
+                    <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@apexhotel.ru</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="rooms.html">Номера</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Подписаться на рассылку</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <p>Узнавайте первыми об акциях и специальных предложениях.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Apex Hotel. Все права защищены.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="terms.html">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    
+    <script src="script.js"></script>
+    <script>
+        // Табы услуг
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Удаляем активный класс у всех кнопок и контента
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.service-content').forEach(c => c.classList.remove('active'));
+                
+                // Добавляем активный класс текущей кнопке
+                btn.classList.add('active');
+                
+                // Показываем соответствующий контент
+                const tabId = btn.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+        
+        // Мобильное меню
+        document.querySelector('.mobile-menu-btn').addEventListener('click', () => {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

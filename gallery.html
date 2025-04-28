@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="гостиница, отель, фото, галерея, Apex Hotel">
+    <meta name="description" content="Фотогалерея роскошного гостиничного комплекса Apex Hotel">
+    <title>Галерея - Apex Hotel</title>
+
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/css/lightgallery.min.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Apex Hotel</h1>
+                <p>Гостиничный комплекс</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="rooms.html">Номера</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="location.html">Расположение</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li class="phone-number">
+                        <a href="tel:+74951234567">
+                            <i class="fas fa-phone-alt"></i> +7 (986) 934-61-90
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main class="gallery-main">
+        <section class="gallery-hero">
+            <div class="container">
+                <h1>Фотогалерея Apex Hotel</h1>
+                <p>Окунитесь в атмосферу роскоши и комфорта через нашу фотогалерею</p>
+            </div>
+        </section>
+
+        <section class="gallery-content">
+            <div class="container">
+                <div class="gallery-filter">
+                    <button class="filter-btn active" data-filter="all">Все фото</button>
+                    <button class="filter-btn" data-filter="rooms">Номера</button>
+                    <button class="filter-btn" data-filter="restaurant">Ресторан</button>
+                    <button class="filter-btn" data-filter="spa">SPA-центр</button>
+                    <button class="filter-btn" data-filter="territory">Территория</button>
+                    <button class="filter-btn" data-filter="events">Мероприятия</button>
+                </div>
+
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Номера -->
+                    <div class="gallery-item" data-category="rooms">
+                        <img src="img/rooms/standard-room.jpg" alt="Стандартный номер">
+                        <div class="gallery-overlay">
+                            <h3>Стандартный номер</h3>
+                            <p>Уютный и комфортабельный</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="rooms">
+                        <img src="img/rooms/luxury-room.jpg" alt="Номер Люкс">
+                        <div class="gallery-overlay">
+                            <h3>Номер Люкс</h3>
+                            <p>Просторный с панорамными окнами</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Ресторан -->
+                    <div class="gallery-item" data-category="restaurant">
+                        <img src="img/restaurant/dining-area.jpg" alt="Ресторан">
+                        <div class="gallery-overlay">
+                            <h3>Ресторан Apex Gourmet</h3>
+                            <p>Изысканная кухня от шеф-повара</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="restaurant">
+                        <img src="img/restaurant/lobby-bar.jpg" alt="Лобби-бар">
+                        <div class="gallery-overlay">
+                            <h3>Лобби-бар</h3>
+                            <p>Широкий выбор напитков</p>
+                        </div>
+                    </div>
+                    
+                    <!-- SPA-центр -->
+                    <div class="gallery-item" data-category="spa">
+                        <img src="img/spa/spa-center.jpg" alt="SPA-центр">
+                        <div class="gallery-overlay">
+                            <h3>SPA-центр</h3>
+                            <p>Оазис релаксации</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="spa">
+                        <img src="img/spa/pool.jpg" alt="Бассейн">
+                        <div class="gallery-overlay">
+                            <h3>Бассейн</h3>
+                            <p>С подогревом и гидромассажем</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Территория -->
+                    <div class="gallery-item" data-category="territory">
+                        <img src="img/territory/sea-view.jpg" alt="Вид на море">
+                        <div class="gallery-overlay">
+                            <h3>Вид на море</h3>
+                            <p>Панорамный вид из номеров</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="territory">
+                        <img src="img/territory/terrace.jpg" alt="Терраса">
+                        <div class="gallery-overlay">
+                            <h3>Солнечная терраса</h3>
+                            <p>Место для отдыха у бассейна</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Мероприятия -->
+                    <div class="gallery-item" data-category="events">
+                        <img src="img/events/wedding.jpg" alt="Свадьба">
+                        <div class="gallery-overlay">
+                            <h3>Свадебное торжество</h3>
+                            <p>Организация свадеб</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="events">
+                        <img src="img/events/conference.jpg" alt="Конференция">
+                        <div class="gallery-overlay">
+                            <h3>Конференц-зал</h3>
+                            <p>Проведение деловых мероприятий</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="load-more">
+                    <button class="btn" id="load-more-btn">Показать еще</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Apex Hotel</h3>
+                    <p>Роскошный гостиничный комплекс с безупречным сервисом.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Центральная, 1</p>
+                    <p><i class="fas fa-phone"></i> +7 (986) 934-61-90</p>
+                    <p><i class="fas fa-envelope"></i> info@apexhotel.ru</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="rooms.html">Номера</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Подписаться</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <p>Узнавайте первыми об акциях и спецпредложениях.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Apex Hotel. Все права защищены.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="terms.html">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Скрипты -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/lightgallery.min.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

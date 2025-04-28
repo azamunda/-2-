@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Гостиница, отдых">
+    <meta name="description"
+        content="Наш гостиничный комплекс сочетает в себе современный дизайн, безупречный сервис и домашний уют.">
+    <title>Apex Hotel - Роскошный отдых в самом сердце города</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Шапка с навигацией -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Apex Hotel</h1>
+                <p>Гостиничный комплекс</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="rooms.html">Номера</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="location.html">Расположение</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li class="phone-number">
+                        <a href="tel:+74951234567">
+                            <i class="fas fa-phone-alt"></i> +7 (986) 934-61-90
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Слайдер -->
+    <section class="hero-slider">
+        <div class="slide active">
+            <img src="./img/море 3.webp" alt="Гостиничный комплекс Luxury Haven">
+            <div class="slide-content">
+                <h2>Роскошный отдых на берегу моря</h2>
+                <p>Насладитесь безупречным сервисом и комфортом</p>
+                <a href="rooms.html" class="btn">Забронировать номер</a>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="./img/кухня.jpg" alt="Ресторан гостиницы">
+            <div class="slide-content">
+                <h2>Гастрономические удовольствия</h2>
+                <p>Ресторан с мишленовской кухней</p>
+                <a href="services.html#dining" class="btn">Подробнее</a>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="./img/море 2.webp" alt="СПА центр">
+            <div class="slide-content">
+                <h2>SPA центр</h2>
+                <p>Полное расслабление и восстановление</p>
+                <a href="services.html#spa" class="btn">Записаться</a>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="slider-dots"></div>
+    </section>
+
+    <!-- Быстрое бронирование -->
+    <section class="quick-booking">
+        <div class="container">
+            <h2>Быстрое бронирование</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="check-in">Заезд</label>
+                    <input type="date" id="check-in" name="check-in" required>
+                </div>
+                <div class="form-group">
+                    <label for="check-out">Выезд</label>
+                    <input type="date" id="check-out" name="check-out" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Гости</label>
+                    <select id="guests" name="guests">
+                        <option value="1">1 взрослый</option>
+                        <option value="2">2 взрослых</option>
+                        <option value="3">3 взрослых</option>
+                        <option value="4">4 взрослых</option>
+                        <option value="family">Семья с детьми</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="room-type">Тип номера</label>
+                    <select id="room-type" name="room-type">
+                        <option value="standard">Стандарт</option>
+                        <option value="luxury">Люкс</option>
+                        <option value="family">Семейный</option>
+                        <option value="business">Бизнес</option>
+                        <option value="apartment">Апартаменты</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Проверить наличие</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- О гостинице -->
+    <section class="about-hotel">
+        <div class="container">
+            <div class="about-content">
+                <h2>Добро пожаловать в Apex Hotel</h2>
+                <p>Наш гостиничный комплекс сочетает в себе современный дизайн, безупречный сервис и домашний уют.
+                    Расположенный в самом сердце города, мы предлагаем идеальное сочетание удобства и роскоши для
+                    деловых поездок и отдыха.</p>
+                <p>Каждый из наших номеров оформлен с вниманием к деталям, чтобы обеспечить вам максимальный комфорт во
+                    время пребывания.</p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-wifi"></i>
+                        <p>Бесплатный Wi-Fi</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-parking"></i>
+                        <p>Парковка</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-utensils"></i>
+                        <p>Ресторан</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-swimming-pool"></i>
+                        <p>Бассейн</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    alt="Лобби гостиницы">
+            </div>
+        </div>
+    </section>
+
+    <!-- Популярные номера -->
+    <section class="popular-rooms">
+        <div class="container">
+            <h2>Наши номера</h2>
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <img src="./img/стандарт 1 к.webp"
+                        alt="Стандартный номер">
+                    <div class="room-info">
+                        <h3>Стандарт</h3>
+                        <p>Уютный номер с современным дизайном и всеми необходимыми удобствами.</p>
+                        <div class="room-price">от 5 000 ₽/ночь</div>
+                        <a href="rooms.html#standard" class="btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <img src="img/люкс 1 к.jpeg" alt="Люкс номер">
+                    <div class="room-info">
+                        <h3>Люкс</h3>
+                        <p>Просторный номер с панорамными окнами, гостиной зоной и улучшенными удобствами.</p>
+                        <div class="room-price">от 12 000 ₽/ночь</div>
+                        <a href="rooms.html#luxury" class="btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <img src="img/семейный 1 к.webp" alt="Семейный номер">
+                    <div class="room-info">
+                        <h3>Семейный</h3>
+                        <p>Идеальный вариант для семейного отдыха с дополнительными спальными местами.</p>
+                        <div class="room-price">от 8 000 ₽/ночь</div>
+                        <a href="rooms.html#family" class="btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="rooms.html" class="btn btn-large">Все номера</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section class="services-preview">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-concierge-bell"></i>
+                    <h3>Ресторан</h3>
+                    <p>Гастрономические изыски от нашего шеф-повара</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-spa"></i>
+                    <h3>SPA & Wellness</h3>
+                    <p>Расслабляющие процедуры для тела и души</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-business-time"></i>
+                    <h3>Бизнес-центр</h3>
+                    <p>Все для продуктивной работы</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Трансфер</h3>
+                    <p>Встречаем и провожаем с комфортом</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="services.html" class="btn btn-large">Все услуги</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Отзывы наших гостей</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <p>"Прекрасный отель с отличным сервисом! Номер был чистый и уютный, персонал очень
+                            внимательный. Обязательно вернусь снова!"</p>
+                        <div class="guest-info">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Мария Иванова">
+                            <div>
+                                <h4>Мария Иванова</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Отличное расположение, прекрасные номера и восхитительный завтрак. Персонал всегда готов
+                            помочь. Рекомендую!"</p>
+                        <div class="guest-info">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Алексей Петров">
+                            <div>
+                                <h4>Алексей Петров</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Останавливались с семьей на неделю. Дети в восторге от бассейна, а мы - от спа-центра.
+                            Отличный вариант для семейного отдыха."</p>
+                        <div class="guest-info">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Елена Смирнова">
+                            <div>
+                                <h4>Елена Смирнова</h4>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonials-nav">
+                <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Luxury Haven</h3>
+                    <p>Роскошный гостиничный комплекс с безупречным сервисом в самом сердце города.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Центральная, 1</p>
+                    <p><i class="fas fa-phone"></i> +7 (495) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@luxuryhaven.ru</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="rooms.html">Номера</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Подписаться на рассылку</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <p>Узнавайте первыми об акциях и специальных предложениях.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Luxury Haven. Все права защищены.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Политика конфиденциальности</a>
+                    <a href="terms.html">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+<script src="script.js"></script>
+</body>
+
+</html>
